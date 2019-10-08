@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_close"
+            android:backgroundTint="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="ADD TO DO LIST "
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="monospace"
+            android:text="List Name"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#444" />
+
+        <EditText
+            android:id="@+id/listName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:hint="List Name"
+            android:inputType="textLongMessage|textNoSuggestions"
+            android:maxLength="20"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/addListButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#000"
+            android:fontFamily="monospace"
+            android:text="Add ListName"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

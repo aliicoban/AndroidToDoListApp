@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wraper"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ff0000"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/SendEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorTurkuaz"
+                    android:gravity="center"
+                    android:text="Send Email"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_info_details" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#fafafa"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/created_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="monospace"
+                    android:text="05/10/2019"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:id="@+id/listName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawableRight="@drawable/ic_right_icon"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:text="ListName"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+</com.daimajia.swipe.SwipeLayout>

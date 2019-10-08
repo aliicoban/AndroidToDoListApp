@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="LOGIN"
+                    android:textAllCaps="false"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Login with your registered email and password"
+                    android:textAllCaps="false"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="*E-Mail"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape"
+                    android:fontFamily="monospace"
+                    android:inputType="textLongMessage"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="monospace"
+                    android:text="*Password"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape"
+                    android:fontFamily="monospace"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#000"
+                android:fontFamily="monospace"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/goToReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Not a member yet?"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

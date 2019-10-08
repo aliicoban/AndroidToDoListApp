@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40C4FF</color>
+    <color name="colorPrimaryDark">#40C4FF</color>
+    <color name="colorAccent">#40C4FF</color>
+
+    <color name="colorRed">#D50000</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorOrange">#FFB300</color>
+    <color name="colorOrangekoyu">#FB8C00</color>
+    <color name="colorTurkuaz">#40C4FF</color>
+
+    <color name="gray">#bfbfbf</color>
+    <color name="white">#fff</color>
+    <color name="trans">#00000000</color>
+    <color name="acikgri">#EEEEEE</color>
+    <color name="pink">#F50057</color>
+</resources>
